@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "classic-confections-mcp"
+version = "0.1.0"
+description = "MCP server for vintage candy packaging aesthetics (1890s-1970s)"
+authors = [
+    {name = "Dal Marsters", email = "dal@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=0.1.0"
+]
+
+[project.scripts]
+classic-confections-mcp = "classic_confections_mcp.server:mcp.run"
